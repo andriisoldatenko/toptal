@@ -13,6 +13,7 @@ class CompanyPage
     submit_job_description
   end
 
-  new_job_languages
+  label(:text => 'Onsite').parent.radio :value => 'recruiting'
+  select_list :job_commitment, selected: 'Part-time (20+ hours/week)'
 
 end
