@@ -5,3 +5,4 @@ Feature: Toptal Main Page
 
   Scenario: Log in correctly
     When I am log in to toptal
+    Then Fullfill form for new job
