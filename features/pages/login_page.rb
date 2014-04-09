@@ -10,5 +10,6 @@ class LoginPage
     self.username = username
     self.password = password
     submit_login
+    DashboardPage.new(@browser)
   end
 end

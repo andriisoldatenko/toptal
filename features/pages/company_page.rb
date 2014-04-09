@@ -4,8 +4,10 @@ Watirsome.clickable << :radio
 class CompanyPage
   include Watirsome
 
-  link :add_new_job, text: 'Add New Job'
+
   link :cancel, text: 'Cancel'
+  link :jump_to_job, text: 'Jump to Job'
+
 
   button :submit_job_description, text: 'Next — Job Details'
   button :submit_required_skills, text: 'Next — Required Skills'
@@ -33,5 +35,6 @@ class CompanyPage
     self.job_title = job_title
     self.job_description = job_description
     submit_job_description
+    Watir::Wait.until { @browser.text.include? 'Follow this steps to add new job' }
   end
 end

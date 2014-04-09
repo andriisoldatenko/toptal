@@ -1,5 +1,5 @@
 Before do
-  @browser = Watir::Browser.start 'https://toptal.com/users/login'
+  @browser = Watir::Browser.start 'https://toptal:staging@staging.toptal.com/users/login'
 end
 
 After do
