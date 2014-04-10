@@ -1,8 +1,10 @@
+# encoding: utf-8
 class LoginPage
   include Watirsome
 
   text_field :username, id: 'user_email'
   text_field :password, id: 'user_password'
+
   button :submit_login, text: 'Login'
   title :page
 
